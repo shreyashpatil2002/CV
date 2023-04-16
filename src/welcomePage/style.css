@@ -1,0 +1,274 @@
+/* To all elements in html  */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+/* Style to the header section */
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../Assets/images/herobgmain.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header nav {
+  width: 100%;
+  height: 60px;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header nav #logo,
+.header nav .enterBtn {
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
+.header nav .links,
+.header nav .links ul {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header nav .links ul li {
+  position: relative;
+}
+.header nav .links ul li::before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #010c61;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transition: all 0.5s;
+}
+.header nav .links ul li:hover::before {
+  width: 100%;
+}
+.header nav .enterBtn button,
+.content #startBtn {
+  padding: 8px 40px;
+  border: none;
+  outline: none;
+  /* background: #010c61; */
+  background: #010c61e5;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.header nav .enterBtn button:hover,
+.content #startBtn:hover {
+  box-shadow: 0px 2px 5px #555;
+}
+
+/* Container style in header section  */
+.container {
+  width: 100%;
+  height: calc(100% - 60px);
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content,
+.image {
+  flex-basis: 50%;
+}
+.content {
+  padding: 20px;
+}
+.content h1,
+.content p,
+.content button {
+  margin-top: 15px;
+}
+.content h1 {
+  font-size: 4rem;
+}
+.content h1 span {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.content p {
+  width: 95%;
+}
+.container .image {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  overflow: hidden;
+}
+.container .image .imageList {
+  transform: translateX(45rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.7s;
+}
+.container .image img {
+  width: 20rem;
+  border-radius: 7px;
+  margin: 0 1rem;
+  filter: blur(2px);
+  transition: all 0.7s;
+}
+.container .image .imageList .active {
+  width: 23rem;
+  filter: blur(0px);
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.7);
+}
+.container .image button:nth-child(1) {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 70px;
+  height: 70px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 100;
+}
+.container .image button:nth-child(3) {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 70px;
+  height: 70px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 100;
+}
+.container .image button:hover {
+  background-color: #afafaf;
+}
+.container .image button img {
+  filter: blur(0px);
+  width: 20%;
+}
+
+/* Main section style  */
+
+.main {
+  width: 100%;
+  height: auto;
+}
+.main .sectionOne {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../Assets/images/standOutBg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3rem 2rem;
+}
+.main .sectionOne h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+.cardList {
+  width: 100%;
+  height: auto;
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.cardList .cardContent:nth-child(1) .card {
+  background-image: url(../../Assets/images/undraw_access_account_re_8spm.svg);
+}
+.cardList .cardContent:nth-child(2) .card {
+  background-image: url(../../Assets/images/undraw_reviewed_docs_re_9lmr.svg);
+}
+.cardList .cardContent:nth-child(3) .card {
+  background-image: url(../../Assets/images/undraw_fill_form_re_cwyf.svg);
+}
+.cardList .cardContent:nth-child(4) .card {
+  background-image: url(../../Assets/images/undraw_download_re_li50.svg);
+}
+.cardList .cardContent {
+  width: calc(100% / 5);
+  height: 22rem;
+  padding: 5px 10px;
+  box-shadow: 0px 0px 8px #44444493;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+.cardList .cardContent .card {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+} 
+.cardList .cardContent h3 {
+  font-size: 3.2rem;
+  color: rgba(0, 0, 0, 0.9);
+  z-index: 10;
+  opacity: 0;
+  transition: all .2s;
+}
+.cardList .cardContent:hover .card {
+  filter: blur(7px);
+}
+.cardList .cardContent:hover h3 {
+  opacity: 1;
+}
+.sectionOne>h3 {
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  text-align: center;
+  animation: blink 1s linear infinite alternate;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
