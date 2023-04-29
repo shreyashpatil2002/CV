@@ -71,11 +71,9 @@ let index = 0;
 cpassword.addEventListener('keyup', (e) => {
   index = cpassword.value.length;
   let comparePass = password.value.slice(0, index);
-  console.log(comparePass);
   if(cpassword.value != comparePass) {
     cpassword.classList.add('wrongField');
     cpassword.classList.remove('rightField');
-    console.log(cpassword.value , comparePass);
   }
   else {
     cpassword.classList.add('rightField');
@@ -83,9 +81,14 @@ cpassword.addEventListener('keyup', (e) => {
   }
 });
 
-function checkForm() {
+let form = document.querySelector('form');
+form.addEventListener('submit', () =>{
   if(password.value !== cpassword.value) {
+    form.setAttribute('onsubmit', 'return false');
     cpassword.classList.add('wrongField');
-    return false;
+    cpassword.classList.remove('rightField');
   }
-}
+  else {
+    form.removeAttribute('onsubmit');
+  }
+});

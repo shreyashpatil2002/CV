@@ -5,7 +5,6 @@ let nextBtn = document.getElementById("imageRightSlideBtn"),
   imgCount = images.length;
 currentImg = 0;
 widthImg = 45;
-prevBtn.style.display = "none";
 
 nextBtn.addEventListener("click", () => {
   currentImg++;

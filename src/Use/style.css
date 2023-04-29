@@ -90,3 +90,101 @@ body {
   box-shadow: 0px 1px 5px #555;
 }
 
+/* main styleing is here  */
+.main {
+  width: 100%;
+  height: auto;
+  padding: 0 2rem;
+}
+.section {
+  width: 100%;
+  height: 80vh;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 7px #c7c7c7;
+  border-radius: 20px;
+}
+.section .content, .section .image {
+  flex-basis: 50%;
+}
+.section .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+.section .content div {
+  z-index: 10;
+}
+.section .content div h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+.section .content div p {
+  width: 80%;
+  margin: 15px auto 0;
+  text-align: center;
+}
+#verText {
+  font-size: 6rem;
+  color: #010c617e;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section .image img {
+  width: 300px;
+}
+.section1 {
+  height: calc(100vh - 65px) !important;
+}
+
+/* footer styleing  */
+.footer {
+  width: 100%;
+  height: 60px;
+  padding: 5rem 2rem;
+  margin: 2rem auto 2px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #eee;
+}
+.fotterInfo, .mediaLinks{
+  flex-basis: 20%;
+}
+.footerLinks {
+  flex-basis: 50%;
+}
+.fotterInfo div {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+.fotterInfo div p {
+  margin-left: 15px;
+}
+.fotterInfo img {
+  width: 25px;
+}
+.mediaImg img {
+  width: 35px;
+  margin: 10px 5px;
+}
+.footerLinks {
+  line-height: 25px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footerLinks ul a li {
+  font-size: 15px;
+}
