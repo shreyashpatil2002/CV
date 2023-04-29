@@ -6,12 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../../Assets/logo/favicon.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>CV - Sign Up</title>
 </head>
+
 <body>
     <div class="header">
         <nav>
@@ -26,8 +24,25 @@
         </nav>
     </div>
     <div class="main">
-        <h2>Sign Up</h2>
-        if already have an account <a href="../signin/index.html" style="color: blue;">Click here</a>
+        <div class="form">
+            <form action="#" onsubmit="return checkForm()">
+                <input type="text" name="name" id="name" class="" placeholder="Enter Name" autocomplete="off">
+                <input type="email" name="email" id="email" class="" placeholder="Enter Email Id" autocomplete="off">
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Enter Password"
+                        autocomplete="off">
+                    <img src="../../../Assets/svg/eye-solid.svg" alt="">
+                </div>
+                <div>
+                    <input type="password" name="password2" id="password2" class="" placeholder="Confirm Password" autocomplete="off">
+                    <img src="../../../Assets/svg/eye-solid.svg" alt="">
+                </div>
+                <input type="submit" id="form_btn">
+            </form>
+            <p>Already have an account? <a href="../signin/index.html">Sign In</a></p>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
+
 </html>

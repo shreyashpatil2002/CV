@@ -19,11 +19,6 @@ li {
 body {
   width: 100%;
   height: auto;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-}
-.header , .sectionOne, .sectionTwo , .sectionThree {
-  scroll-snap-align: start;
 }
 /* Style to the header section */
 
@@ -72,5 +67,69 @@ body {
 }
 .header nav .links ul li:hover::before {
   width: 100%;
+}
+
+/* form styleing  */
+.main {
+  width: 100%;
+  height: calc(100vh - 66px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main .form {
+  width: 550px;
+  height: 350px;
+  padding: 2rem 5rem;
+  box-shadow: 0px 4px 5px #e2e2e2;
+  border-radius: 8px;
+}
+.main .form form input, #form_btn{
+  width: 100%;
+  padding: .5rem 1rem;
+  margin-top: 1.5rem;
+  outline: none;
+  border: none;
+  box-shadow: 0px 2px 7px #eee;
+}
+.main .form div {
+  position: relative;
+}
+.main .form form img {
+  width: 18px;
+  position: absolute;
+  right: 10px;
+  top: 34px;
+  cursor: pointer;
+  display: none;
+}
+#form_btn {
+  border: none;
+  outline: none;
+  background: #010c61;
+  color: #fff;
+  font-weight: 600;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+#form_btn:hover {
+  box-shadow: 0px 2px 7px #666;
+}
+.main .form form a {
+  float: right;
+  margin-top: 10px;
+  font-size: 15px;
+  color: #00108a;
+}
+.main .form p {
+  text-align: center;
+  margin-top: 20px;
+}
+.main .form p > a {
+  color: #00108a;
+  text-decoration: underline;
 }
 

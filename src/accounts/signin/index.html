@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <title>CV - Sign In</title>
 </head>
+
 <body>
     <div class="header">
         <nav>
@@ -26,7 +27,21 @@
         </nav>
     </div>
     <div class="main">
-        <h2>sign In</h2>
+        <div class="form">
+            <form action="#">
+                <input type="email" name="email" id="email" placeholder="Enter Email Id" autocomplete="off">
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Enter Password"
+                        autocomplete="off">
+                    <img src="../../../Assets/svg/eye-solid.svg" alt="">
+                    <a href="#">Forgot password ?</a>
+                </div>
+                <input type="submit" id="form_btn">
+            </form>
+            <p>Don't have an account? <a href="../signup/index.html">Sign Up</a></p>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
