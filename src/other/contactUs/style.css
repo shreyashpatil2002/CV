@@ -38,7 +38,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* background: url(../../Assets/images/bg.png); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -81,7 +80,6 @@ body {
   padding: 8px 40px;
   border: none;
   outline: none;
-  /* background: #010c61; */
   background: #010c61e5;
   color: #fff;
   border-radius: 10px;
@@ -91,4 +89,92 @@ body {
 .header nav .enterBtn button:hover,
 #startBtn:hover, #sectionOneBtn:hover {
   box-shadow: 0px 1px 5px #555;
+}
+
+/* main styling is here  */
+.main {
+  width: 100%;
+  height: calc(100vh - 65px);
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .container {
+  width: 85%;
+  height: auto;
+  padding: 5rem 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .image , .container .form {
+  flex-basis: 50%;
+}
+.container .image img {
+  width: 300px;
+}
+.container .form form input, form textarea {
+  width: 100%;
+  padding: .8rem 1rem;
+  margin-bottom: 15px;
+  border: none;
+  outline: none;
+  resize: none;
+  border-radius: 6px;
+  box-shadow: 0px 1px 3px #888;
+}
+#contact_btn {
+  font-size: 16px;
+  font-weight: 500;
+  background: #010c61;
+  color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all .4s;
+}
+#contact_btn:hover {
+  box-shadow: 0px 2px 8px #777;
+}
+
+/* footer styleing is here  */
+
+.footer {
+  width: 100%;
+  height: 60px;
+  padding: 5rem 2rem;
+  margin: 2rem auto 2px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #eee;
+}
+.fotterInfo, .mediaLinks{
+  flex-basis: 20%;
+}
+.footerLinks {
+  flex-basis: 50%;
+}
+.fotterInfo div {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+.fotterInfo div p {
+  margin-left: 15px;
+}
+.fotterInfo img {
+  width: 25px;
+}
+.mediaImg img {
+  width: 35px;
+  margin: 10px 5px;
+}
+.footerLinks {
+  line-height: 25px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footerLinks ul a li {
+  font-size: 15px;
 }

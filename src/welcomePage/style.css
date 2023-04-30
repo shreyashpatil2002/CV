@@ -1,3 +1,4 @@
+
 /* To all elements in html  */
 *,
 *::before,
@@ -7,25 +8,30 @@
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
 ul,
 ol,
 li {
   list-style: none;
 }
+
 body {
   width: 100%;
   height: auto;
 }
+
 /* Style to the header section */
 
 .header {
   width: 100%;
   height: 100vh;
 }
+
 .header nav {
   width: 100%;
   height: 60px;
@@ -38,6 +44,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .header nav #logo,
 .header nav .enterBtn {
   width: 10%;
@@ -51,9 +58,11 @@ body {
   align-items: center;
   justify-content: space-around;
 }
+
 .header nav .links ul li {
   position: relative;
 }
+
 .header nav .links ul li::before {
   content: "";
   width: 0%;
@@ -64,12 +73,15 @@ body {
   left: 0px;
   transition: all 0.5s;
 }
+
 .header nav .links ul li:hover::before {
   width: 100%;
 }
+
 .header nav .links ul li:first-child::before {
   width: 100%;
 }
+
 .header nav .enterBtn button,
 #startBtn,
 #sectionOneBtn {
@@ -83,8 +95,10 @@ body {
   cursor: pointer;
   transition: all 0.3s;
 }
+
 .header nav .enterBtn button:hover,
-#startBtn:hover, #sectionOneBtn:hover {
+#startBtn:hover,
+#sectionOneBtn:hover {
   box-shadow: 0px 2px 5px #929292;
 }
 
@@ -97,37 +111,45 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
 .content,
 .image {
   flex-basis: 50%;
 }
+
 .content {
   padding: 20px;
 }
+
 .content h1,
 .content p,
 .content button {
   margin-top: 15px;
 }
+
 .content h1 {
   font-size: 4rem;
 }
-.content h1 span, .sectionOne .imageContent h1 span , .sectionTwo .sectionTwoContent h1 span, .sectionThree h1 span{
+
+.content h1 span,
+.sectionOne .imageContent h1 span,
+.sectionTwo .sectionTwoContent h1 span,
+.sectionThree h1 span {
   background: rgb(131, 58, 180);
-  background: linear-gradient(
-    90deg,
-    rgba(131, 58, 180, 1) 0%,
-    rgba(253, 29, 29, 1) 50%,
-    rgba(252, 176, 69, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(131, 58, 180, 1) 0%,
+      rgba(253, 29, 29, 1) 50%,
+      rgba(252, 176, 69, 1) 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
 }
+
 .content p {
   width: 95%;
   color: #5d646e;
 }
+
 .container .image {
   height: 100%;
   display: flex;
@@ -136,6 +158,7 @@ body {
   position: relative;
   overflow: hidden;
 }
+
 .container .image .imageList {
   transform: translateX(45rem);
   display: flex;
@@ -143,6 +166,7 @@ body {
   justify-content: center;
   transition: all 0.7s;
 }
+
 .container .image img {
   width: 20rem;
   border-radius: 10px;
@@ -150,11 +174,13 @@ body {
   filter: blur(2px);
   transition: all 0.7s;
 }
+
 .container .image .imageList .active {
   width: 23rem;
   filter: blur(0px);
   box-shadow: 0px 4px 8px #8b8b8b;
 }
+
 .container .image button:nth-child(1) {
   position: absolute;
   top: 50%;
@@ -170,6 +196,7 @@ body {
   z-index: 100;
   display: none;
 }
+
 .container .image button:nth-child(3) {
   position: absolute;
   top: 50%;
@@ -184,9 +211,11 @@ body {
   transition: 0.3s;
   z-index: 100;
 }
+
 .container .image button:hover {
   background-color: #afafaf;
 }
+
 .container .image button img {
   filter: blur(0px);
   width: 20%;
@@ -198,16 +227,19 @@ body {
   width: 100%;
   height: auto;
 }
+
 .main .sectionOne {
   width: 100%;
   height: 100vh;
   padding: 3rem 2rem;
 }
+
 .main .sectionOne h1 {
   text-align: center;
   font-size: 3rem;
   margin-top: 2rem;
 }
+
 .cardList {
   width: 100%;
   height: auto;
@@ -216,18 +248,23 @@ body {
   align-items: center;
   justify-content: space-evenly;
 }
+
 .cardList .cardContent:nth-child(1) .card {
   background-image: url(../../Assets/svg/undraw_access_account_re_8spm.svg);
 }
+
 .cardList .cardContent:nth-child(2) .card {
   background-image: url(../../Assets/svg/undraw_reviewed_docs_re_9lmr.svg);
 }
+
 .cardList .cardContent:nth-child(3) .card {
   background-image: url(../../Assets/svg/undraw_fill_form_re_cwyf.svg);
 }
+
 .cardList .cardContent:nth-child(4) .card {
   background-image: url(../../Assets/svg/undraw_download_re_li50.svg);
 }
+
 .cardList .cardContent {
   width: 17rem;
   height: 22rem;
@@ -244,6 +281,7 @@ body {
   position: relative;
   cursor: pointer;
 }
+
 .cardList .cardContent .card {
   width: 100%;
   height: 100%;
@@ -254,6 +292,7 @@ body {
   top: 0;
   left: 0;
 }
+
 .cardList .cardContent h3 {
   font-size: 3rem;
   color: rgba(0, 0, 0, 0.9);
@@ -261,12 +300,15 @@ body {
   opacity: 0;
   transition: all 0.2s;
 }
+
 .cardList .cardContent:hover .card {
   filter: blur(7px);
 }
+
 .cardList .cardContent:hover h3 {
   opacity: 1;
 }
+
 #sectionOneBtn {
   display: flex;
   margin: 3rem auto;
@@ -282,36 +324,42 @@ body {
   height: 100vh;
   padding: 3rem 2rem;
 }
+
 .sectionTwo .sectionTwoImg img {
   width: 25rem;
   display: flex;
   margin: auto;
 }
+
 .sectionTwo .sectionTwoContent {
   width: 40rem;
   margin: 3rem auto;
   text-align: center;
 }
+
 .sectionTwoContent h1 {
   font-size: 2.5rem;
 }
+
 .sectionTwoContent p {
   margin-top: 2rem;
   color: #5d646e;
 }
 
 /* sectionThree style is here  */
-.main .sectionThree{
+.main .sectionThree {
   width: 100%;
   height: 100vh;
   padding: 3rem 2rem;
 }
+
 .sectionThree h1 {
   font-size: 4rem;
   text-align: center;
   padding: 5px 10px;
   border-radius: 20px;
 }
+
 .sectionThree .packages {
   width: 100%;
   height: calc(100% - 6rem);
@@ -320,54 +368,72 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.packages .basicPakage , .packages .primiumPakage {
+
+.packages .basicPakage,
+.packages .primiumPakage {
   height: 100%;
   padding: 2rem;
   box-shadow: 0px 2px 5px #a5a5a5;
   border-radius: 20px;
   transition: all .5s;
 }
+
 .packages .basicPakage {
   background: linear-gradient(45deg, #9165ff, #B9B2FF);
 }
+
 .packages .primiumPakage {
   background: linear-gradient(45deg, #ff00aa, #ff8af2);
 }
+
 .packages .active {
   flex-basis: 75%;
 }
+
 .packages .unactive {
   flex-basis: 20%;
 }
-.packages .unactive p, .packages .unactive h5, .packages .unactive ul, .packages .unactive button {
+
+.packages .unactive p,
+.packages .unactive h5,
+.packages .unactive ul,
+.packages .unactive button {
   display: none;
 }
+
 .packages .unactive h2 {
   writing-mode: vertical-lr;
   margin-top: 3rem;
 }
+
 .packages h2 {
   font-size: 3rem;
 }
+
 .packages p {
   font-size: 16px;
 }
+
 .packages ul {
   margin: 1rem 0 0 .5rem;
 }
+
 .packages ul li {
   display: flex;
   align-items: center;
   margin-top: 7px;
   font-weight: bold;
 }
+
 .packages img {
   width: 2rem;
   margin-right: 7px;
 }
+
 .packages img:nth-child(1) {
   cursor: pointer;
 }
+
 .packages button {
   margin-top: 2rem;
   padding: 13px 50px;
@@ -378,6 +444,7 @@ body {
   border-radius: 15px;
   transition: .2s;
 }
+
 .packages button:hover {
   box-shadow: 0px 1px 7px #686868;
   background: #eee;
@@ -394,32 +461,41 @@ body {
   justify-content: space-between;
   background: #eee;
 }
-.fotterInfo, .mediaLinks{
+
+.fotterInfo,
+.mediaLinks {
   flex-basis: 20%;
 }
+
 .footerLinks {
   flex-basis: 50%;
 }
+
 .fotterInfo div {
   display: flex;
   align-items: center;
   margin: 15px 0;
 }
+
 .fotterInfo div p {
   margin-left: 15px;
 }
+
 .fotterInfo img {
   width: 25px;
 }
+
 .mediaImg img {
   width: 35px;
   margin: 10px 5px;
 }
+
 .footerLinks {
   line-height: 25px;
   display: flex;
   justify-content: space-evenly;
 }
+
 .footerLinks ul a li {
   font-size: 15px;
 }
