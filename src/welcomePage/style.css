@@ -410,8 +410,14 @@ body {
   font-size: 3rem;
 }
 
+.packages h5 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 .packages p {
   font-size: 16px;
+  margin: 15px 0;
 }
 
 .packages ul {
@@ -421,15 +427,17 @@ body {
 .packages ul li {
   display: flex;
   align-items: center;
-  margin-top: 7px;
+  margin-top: 10px;
   font-weight: bold;
 }
 
 .packages img {
   width: 2rem;
-  margin-right: 7px;
 }
-
+.packages ul li>img {
+  width: 1.3rem;
+  margin-right: 12px;
+}
 .packages img:nth-child(1) {
   cursor: pointer;
 }
