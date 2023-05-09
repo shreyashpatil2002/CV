@@ -114,13 +114,53 @@ body {
   margin: 1rem auto;
   width: 30rem;
 }
-.mediaLinks {
-  width: 15rem;
+
+/* footer styleing  */
+.footer {
+  width: 100%;
+  height: 60px;
+  padding: 5rem 2rem;
+  margin: 2rem auto 2px auto;
   display: flex;
-  margin: auto;
   align-items: center;
   justify-content: space-between;
+  background: #eee;
 }
-.mediaLinks img {
-  width: 32px;
+
+.fotterInfo,
+.mediaLinks {
+  flex-basis: 20%;
+}
+
+.footerLinks {
+  flex-basis: 50%;
+}
+
+.fotterInfo div {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.fotterInfo div p {
+  margin-left: 15px;
+}
+
+.fotterInfo img {
+  width: 25px;
+}
+
+.mediaImg img {
+  width: 35px;
+  margin: 10px 5px;
+}
+
+.footerLinks {
+  line-height: 25px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footerLinks ul a li {
+  font-size: 15px;
 }
