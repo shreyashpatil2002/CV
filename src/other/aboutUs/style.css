@@ -56,6 +56,10 @@ body {
   align-items: center;
   justify-content: space-around;
 }
+.header nav #logo img {
+  width: 12rem;
+  margin-left: 15px;
+}
 .header nav .links ul li {
   position: relative;
 }

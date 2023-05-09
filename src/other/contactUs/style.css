@@ -48,6 +48,10 @@ body {
   display: flex;
   align-items: center;
 }
+.header nav #logo img {
+  width: 12rem;
+  margin-left: 15px;
+}
 .header nav .links,
 .header nav .links ul {
   width: 50%;
