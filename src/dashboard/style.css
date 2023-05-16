@@ -49,26 +49,33 @@ body {
     display: flex;
     align-items: center;
 }
-
-.header nav .UserAccount button {
-    border: none;
-    outline: none;
+.header nav #logo img {
+    width: 12rem;
+}
+.UserAccount {
     cursor: pointer;
-    transition: all 0.3s;
-    background: transparent;
-    padding-right: 20px;
+}
+.UserAccount img {
+    width: 2.3rem;
+    margin-right: 12px;
 }
 .accountInfo {
     position: relative;
+}
+.UserAccountActive p {
+    font-weight: bold;
+    margin-bottom: .7rem;
+    color: #444;
+}
+#UserAccountBox {
+    position: absolute;
+    top: 45px;
+    right: 0;
 }
 .UserAccountActive {
     width: 13rem;
     height: auto;
     padding: 0.7rem 2rem;
-    position: absolute;
-    top: 3.5rem;
-    right: .5rem;
-    transform: translate(0%, 0%);
     background: #eee;
     border-radius: 10px;
     box-shadow: 0px 3px 7px #e0e0e0;
@@ -79,10 +86,12 @@ body {
     height: 35px;
     margin: 3px 0;
 }
+.links {
+    margin-top: .7rem;
+}
 .UserAccounthidden {
-    padding: 0;
-    height: 0px;
-    overflow: hidden;
+    height: auto;
+    display: none;
 }
 .UserAccountActive ul li:hover {
     color: rgb(0, 183, 255);
@@ -101,11 +110,17 @@ body {
     justify-content: space-between;
 }
 
+/* left_sidebar style is here  */
 .container .left_sidebar {
     flex-basis: 15%;
     height: 100%;
 }
-
+.ContentList {
+    width: 90%;
+    margin: auto;
+    background: red;
+}
+/* right_sidebar style is here  */
 .container .right_sidebar {
     flex-basis: 85%;
     height: 100%;
