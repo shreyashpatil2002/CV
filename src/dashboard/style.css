@@ -71,7 +71,7 @@ body {
     transform: translate(0%, 0%);
     background: #eee;
     border-radius: 10px;
-    box-shadow: 0px 3px 7px #999999cb;
+    box-shadow: 0px 3px 7px #e0e0e0;
     transition: all .5s;
 } 
 .UserAccountActive ul li {
