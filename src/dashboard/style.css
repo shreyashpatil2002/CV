@@ -78,7 +78,6 @@ body {
 .UserAccountActive p {
     font-weight: bold;
     margin-bottom: .7rem;
-    color: #444;
 }
 #UserAccountBox {
     position: absolute;
@@ -196,20 +195,4 @@ body {
 .mediaLinks .mediaImg img {
     width: 30px;
 }
-/* right_sidebar style is here  */
-.container .right_sidebar {
-    flex-basis: 82%;
-    height: 100%;
-    padding: 2rem;
-}
-.container .right_sidebar p {
-    text-align: center;
-}
-.container .right_sidebar p img {
-    width: 35%;
-    margin: auto;
-}
-.container .right_sidebar h1 {
-    text-align: center;
-    margin-top: 2rem;
-}
+
