@@ -9,13 +9,6 @@
       href="../../Assets/logo/favicon.jpg"
       type="image/x-icon"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <link rel="stylesheet" href="style.css" />
     <title>CV - Dashboard</title>
   </head>
@@ -24,12 +17,13 @@
       <nav>
         <div id="logo"><img src="../../Assets/logo/CV.png" alt="" /></div>
         <div class="accountInfo">
+          <button aria-label="Massages"><ion-icon name="mail-unread-outline" id="massage-icon"></ion-icon></button>
           <div class="UserAccount">
             <img src="../../Assets/images/avatar (1).png" alt="" /> Shreyash
           </div>
           <div class="UserAccounthidden" id="UserAccountBox">
             <p>Welcome, Shreyash</p>
-            <hr>
+            <hr />
             <div class="links">
               <ul>
                 <a href="#"
@@ -64,35 +58,56 @@
     <div class="container">
       <div class="left_sidebar">
         <div class="ContentList">
-            <ul>
-                <li>Create &plus;</li>
-                <li>Templates &part;</li>
-                <li>Resumes &parallel;</li>
-                <li>Activity</li>
-                <li>Contact Us</li>
-            </ul>
+          <ul>
+            <li>Create <ion-icon name="add-outline"></ion-icon></li>
+            <li>Templates <ion-icon name="newspaper-outline"></ion-icon></li>
+            <li>Resumes <ion-icon name="document-outline"></ion-icon></li>
+            <li>Activity <ion-icon name="bar-chart-outline"></ion-icon></li>
+            <li>Contact Us <ion-icon name="call-outline"></ion-icon></li>
+          </ul>
         </div>
         <div class="Extra">
-            <h3>Explore</h3>
-            <p>Here are something that take boost to your carrer in IT Field. Top companies offer students some 
-                benificial things.
-            </p>
+          <h3>Explore ⭐</h3>
+          <p>
+            Here are something that give boost to your carrer in
+            <b> IT Field. </b>Top companies offer students some benificial
+            things.
+          </p>
+          <a href="#"><button>Learn More</button></a>
         </div>
         <div class="mediaLinks">
-            <h3>Follow us :</h3>
-            <div class="mediaImg">
-              <a href="#"><img src="../../Assets/svg/linkedin (1).svg" alt="" /></a>
-              <a href="https://github.com/shreyashpatil2002/CV"><img src="../../Assets/svg/github.svg" alt="" /></a>
-              <a href="#"><img src="../../Assets/svg/mail.svg" alt="" /></a>
-            </div>
-            <hr />
-            <div id="copyright" style="margin-top: 20px">
-              <p>&copy; Builder.io 2023.</p>
-            </div>
+          <h3>Follow us :</h3>
+          <div class="mediaImg">
+            <a href="#"
+              ><img src="../../Assets/svg/linkedin (1).svg" alt=""
+            /></a>
+            <a href="https://github.com/shreyashpatil2002/CV"
+              ><img src="../../Assets/svg/github.svg" alt=""
+            /></a>
+            <a href="#"><img src="../../Assets/svg/mail.svg" alt="" /></a>
           </div>
+          <div id="copyright" style="margin-top: 20px">
+            <p>&copy; Curriculum Vitae 2023.</p>
+          </div>
+        </div>
       </div>
-      <div class="right_sidebar">MainContent</div>
+      <div class="right_sidebar">
+        <div class="welcomeImage">
+          <p><img src="../../Assets/svg/undraw_welcoming_re_x0qo-1.svg" alt=""></p>
+          <h1>Welcome To Dashboard !</h1>
+        </div>
+
+
+      </div>
     </div>
     <script src="./script/userAccounttoggle.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
