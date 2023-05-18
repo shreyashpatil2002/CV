@@ -145,9 +145,8 @@ body {
     justify-content: center;
 }
 .ContentList li:hover {
-    box-shadow: 0px 0px 7px #010c61ae;
-    background: #010c61;
-    color: #fff;
+    box-shadow: 0px 0px 7px #eee;
+    background: #eee;
 }
 .ContentList li ion-icon {
     margin-left: .5rem;
@@ -165,6 +164,10 @@ body {
 }
 .Extra h3 {
     font-size: 1.7rem;
+}
+.Extra h3 ion-icon {
+    color: gold;
+    margin-top: 4px;
 }
 .Extra p {
     width: 100%;
