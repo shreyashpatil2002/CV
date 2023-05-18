@@ -7,7 +7,7 @@ left_sidebar_btns[4].addEventListener('click', () => {
     color: #fff;`;
     right_sidebar.innerHTML = `<div class="container">
     <div class="image">
-        <img src="../../../Assets/svg/undraw_feedback_re_urmj.svg" alt="">
+        <img src="../../Assets/svg/undraw_feedback_re_urmj.svg" alt="">
     </div>
     <div class="form">
         <form action="#">
