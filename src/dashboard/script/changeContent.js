@@ -1,7 +1,52 @@
 let right_sidebar = document.querySelector('.container .right_sidebar');
 let left_sidebar_btns = document.querySelectorAll('.ContentList li');
 
+left_sidebar_btns[0].addEventListener('click', () => {
+    left_sidebar_btns.forEach(element => {
+        element.style = `box-shadow: none;
+        background: transparent;
+        color: #000;`
+    });
+    left_sidebar_btns[0].style = `box-shadow: 0px 0px 7px #010c61ae;
+    background: #010c61;
+    color: #fff;`;
+});
+left_sidebar_btns[1].addEventListener('click', () => {
+    left_sidebar_btns.forEach(element => {
+        element.style = `box-shadow: none;
+        background: transparent;
+        color: #000;`
+    });
+    left_sidebar_btns[1].style = `box-shadow: 0px 0px 7px #010c61ae;
+    background: #010c61;
+    color: #fff;`;
+});
+left_sidebar_btns[2].addEventListener('click', () => {
+    left_sidebar_btns.forEach(element => {
+        element.style = `box-shadow: none;
+        background: transparent;
+        color: #000;`
+    });
+    left_sidebar_btns[2].style = `box-shadow: 0px 0px 7px #010c61ae;
+    background: #010c61;
+    color: #fff;`;
+});
+left_sidebar_btns[3].addEventListener('click', () => {
+    left_sidebar_btns.forEach(element => {
+        element.style = `box-shadow: none;
+        background: transparent;
+        color: #000;`
+    });
+    left_sidebar_btns[3].style = `box-shadow: 0px 0px 7px #010c61ae;
+    background: #010c61;
+    color: #fff;`;
+});
 left_sidebar_btns[4].addEventListener('click', () => {
+    left_sidebar_btns.forEach(element => {
+        element.style = `box-shadow: none;
+        background: transparent;
+        color: #000;`
+    });
     left_sidebar_btns[4].style = `box-shadow: 0px 0px 7px #010c61ae;
     background: #010c61;
     color: #fff;`;
@@ -19,5 +64,5 @@ left_sidebar_btns[4].addEventListener('click', () => {
         </form>
     </div>
 </div>`;
-})
+});
 
