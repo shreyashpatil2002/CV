@@ -36,7 +36,22 @@ li {
     margin-top: 2rem;
 }
 
-.container .form form input, form textarea {
+/* Contact Us styling  */
+.right_sidebar .container {
+    width: 100%;
+    height: auto;
+    padding: 5rem 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .image , .container .form {
+    flex-basis: 50%;
+  }
+  .container .image img {
+    width: 300px;
+  }
+  .container .form form input, form textarea {
     width: 100%;
     padding: .8rem 1rem;
     margin-bottom: 15px;
