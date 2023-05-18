@@ -188,15 +188,15 @@ body {
     width: 95%;
     margin: auto;
     position: relative;
-    margin-top: .8rem;
+    margin-top: .7rem;
 }
 .mediaLinks .mediaImg {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 1rem;
+    margin-top: .7rem;
 }
 .mediaLinks .mediaImg img {
-    width: 30px;
+    width: 28px;
 }
 
