@@ -52,7 +52,7 @@ li {
   .ContactContainer .image img {
     width: 300px;
   }
-  .ContactContainer .form form input, form textarea {
+  .ContactContainer .form form input,   .ContactContainer .form form textarea {
     width: 100%;
     padding: .8rem 1rem;
     margin-bottom: 15px;
@@ -119,13 +119,14 @@ li {
 .resumeForm fieldset input#lastName,.resumeForm fieldset input#telNumber {
   margin-left: 10%;
 }
-.resumeForm fieldset input#jobRole,.resumeForm fieldset input#userEmail {
+.resumeForm fieldset input#jobRole,.resumeForm fieldset input#userEmail, .resumeForm fieldset textarea {
   width: 98.8%;
 }
-.resumeForm fieldset input {
+.resumeForm fieldset input, .resumeForm fieldset textarea {
   margin-top: 1.6rem;
   padding: 10px 13px;
   outline: none;
+  resize: none;
 }
 .resumeForm fieldset #Form1btn {
   float: right;
