@@ -50,7 +50,7 @@ left_sidebar_btns[4].addEventListener('click', () => {
     left_sidebar_btns[4].style = `box-shadow: 0px 0px 7px #010c61ae;
     background: #010c61;
     color: #fff;`;
-    right_sidebar.innerHTML = `<div class="container">
+    right_sidebar.innerHTML = `<div class="ContactContainer">
     <div class="image">
         <img src="../../Assets/svg/undraw_feedback_re_urmj.svg" alt="">
     </div>
