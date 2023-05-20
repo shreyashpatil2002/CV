@@ -46,13 +46,14 @@ left_sidebar_btns[0].addEventListener('click', () => {
         placeholder="Last Name"
         autocomplete="off"
         />
-      <input
-        type="email"
-        id="userEmail"
-        name="userEmail"
-        placeholder="Job email"
+        <input
+        type="text"
+        id="userJob"
+        name="userJob"
+        placeholder="Job Role"
         autocomplete="off"
         />
+      
       <input
         type="number"
         id="userNumber"
@@ -66,6 +67,13 @@ left_sidebar_btns[0].addEventListener('click', () => {
         name="telNumber"
         placeholder="Telephone number"
       />
+      <input
+        type="address"
+        id="userAddress"
+        name="userAddress"
+        placeholder="Your Address"
+        autocomplete="off"
+        />
       <textarea name="aboutUser" id="aboutUser" cols="40" placeholder="About Yourself" rows="6" ></textarea>
       <input type="button" value="Next" id="Form1btn" />
     </fieldset>

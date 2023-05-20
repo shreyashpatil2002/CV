@@ -113,10 +113,12 @@ li {
 .resumeForm fieldset legend {
   font-size: 26px;
 }
-.resumeForm fieldset input#firstName,.resumeForm fieldset input#lastName,.resumeForm fieldset input#userNumber,.resumeForm fieldset input#telNumber {
+.resumeForm fieldset input#firstName,.resumeForm fieldset input#lastName,.resumeForm fieldset input#userNumber,.resumeForm fieldset input#telNumber, 
+.resumeForm fieldset input#userJob, .resumeForm fieldset input#userAddress
+{
   width: 44%;
 }
-.resumeForm fieldset input#lastName,.resumeForm fieldset input#telNumber {
+.resumeForm fieldset input#lastName, .resumeForm fieldset input#userNumber, .resumeForm fieldset input#userAddress {
   margin-left: 10%;
 }
 .resumeForm fieldset input#jobRole,.resumeForm fieldset input#userEmail, .resumeForm fieldset textarea {
@@ -147,5 +149,5 @@ li {
   width: 100%;
 }
 .resumeForm input#startYear, input#endYear {
-  width: 49.4%;
+  width: 49.5%;
 }
