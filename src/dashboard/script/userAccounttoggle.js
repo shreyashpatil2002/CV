@@ -1,3 +1,12 @@
+
+let UserName = document.getElementById('UserName'),
+UserNameWel = document.getElementById('UserWelcome');
+let data = localStorage.getItem('SignUpData');
+let UserData = JSON.parse(data);
+
+UserName.innerText = UserData.userName;
+UserNameWel.innerText = `Welcome, ${UserData.userName}`;
+
 let AccountBtn = document.querySelector('.UserAccount');
 let AccountBox = document.getElementById('UserAccountBox')
 AccountBtn.addEventListener('click', () => {
