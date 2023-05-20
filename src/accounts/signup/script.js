@@ -11,25 +11,23 @@ eyes[0].addEventListener("click", () => {
     eyes[0].setAttribute("src", "../../../Assets/svg/eye-slash-solid.svg");
     password.setAttribute("type", "text");
     eye1 = 0;
-  }
-  else {
+  } else {
     eyes[0].setAttribute("src", "../../../Assets/svg/eye-solid.svg");
     password.setAttribute("type", "password");
     eye1 = 1;
   }
 });
 eyes[1].addEventListener("click", () => {
-    if (eye2 == 1) {
-      eyes[1].setAttribute("src", "../../../Assets/svg/eye-slash-solid.svg");
-      cpassword.setAttribute("type", "text");
-      eye2 = 0;
-    }
-    else {
-      eyes[1].setAttribute("src", "../../../Assets/svg/eye-solid.svg");
-      cpassword.setAttribute("type", "password");
-      eye2 = 1;
-    }
-  });
+  if (eye2 == 1) {
+    eyes[1].setAttribute("src", "../../../Assets/svg/eye-slash-solid.svg");
+    cpassword.setAttribute("type", "text");
+    eye2 = 0;
+  } else {
+    eyes[1].setAttribute("src", "../../../Assets/svg/eye-solid.svg");
+    cpassword.setAttribute("type", "password");
+    eye2 = 1;
+  }
+});
 
 mail.addEventListener("focusin", () => {
   mail.removeAttribute("placeholder");
@@ -68,27 +66,26 @@ cpassword.addEventListener("focusout", () => {
 });
 
 let index = 0;
-cpassword.addEventListener('keyup', (e) => {
+cpassword.addEventListener("keyup", (e) => {
   index = cpassword.value.length;
   let comparePass = password.value.slice(0, index);
-  if(cpassword.value != comparePass) {
-    cpassword.classList.add('wrongField');
-    cpassword.classList.remove('rightField');
-  }
-  else {
-    cpassword.classList.add('rightField');
-    cpassword.classList.remove('wrongField');
+  if (cpassword.value != comparePass) {
+    cpassword.classList.add("wrongField");
+    cpassword.classList.remove("rightField");
+  } else {
+    cpassword.classList.add("rightField");
+    cpassword.classList.remove("wrongField");
   }
 });
 
-let form = document.querySelector('form');
-form.addEventListener('submit', () =>{
-  if(password.value !== cpassword.value) {
-    form.setAttribute('onsubmit', 'return false');
-    cpassword.classList.add('wrongField');
-    cpassword.classList.remove('rightField');
+let form = document.querySelector("form");
+let signUpDataFields = document.querySelectorAll('.form input');
+form.addEventListener("submit", () => {
+  let signUpData = {
+    "userName": signUpDataFields[0].value,
+    "userEmail": signUpDataFields[1].value,
+    "userPassword": signUpDataFields[2].value,
   }
-  else {
-    form.removeAttribute('onsubmit');
-  }
+  signUpDataString = JSON.stringify(signUpData);
+  localStorage.setItem('SignUpData', signUpDataString);
 });
