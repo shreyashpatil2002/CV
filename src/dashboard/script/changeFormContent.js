@@ -73,7 +73,40 @@ let resumeFormContentField = document.querySelector('.resumeForm');
     resumeFormContentField.innerHTML = `<form action="#" id="UserPersonalInfo">
     <fieldset>
       <legend>👨🏻‍🎓 Eduacational Details &nbsp;</legend>
-      
+      <div>
+        <ul style="list-style: circle;color: red;" id="errorContent">
+          
+        </ul>
+      </div>
+      <input
+        type="text"
+        id="universityName"
+        name="universityName"
+        placeholder="University Name"
+        autocomplete="off"
+        />
+      <input
+        type="text"
+        id="degreeName"
+        name="degreeName"
+        placeholder="Degree Name"
+        autocomplete="off"
+        />
+      <input
+        type="month"
+        id="startYear"
+        name="startYear"
+        placeholder="Start Month"
+        autocomplete="off"
+        />
+      <input
+        type="month"
+        id="endYear"
+        name="endYear"
+        placeholder="End Month"
+        autocomplete="off"
+        />
+        <input type="button" value="Next" id="Form2btn" />
     </fieldset>
   </form>`;
   });
