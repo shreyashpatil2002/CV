@@ -1,4 +1,4 @@
-if(localStorage.getItem('SignUpData') == undefined)
+if(localStorage.getItem('SignUpData') == null)
         body.innerHTML = '502 Bad Getway';
 
 let UserName = document.getElementById('UserName'),
