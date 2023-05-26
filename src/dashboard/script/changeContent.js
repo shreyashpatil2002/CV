@@ -53,7 +53,12 @@ left_sidebar_btns[0].addEventListener('click', () => {
         placeholder="Job Role"
         autocomplete="off"
         />
-      
+        <input
+        type="email"
+        id="userMail"
+        name="userMail"
+        placeholder="Email Id"
+      />
       <input
         type="number"
         id="userNumber"
@@ -61,12 +66,6 @@ left_sidebar_btns[0].addEventListener('click', () => {
         placeholder="Phone number"
         autocomplete="off"
         />
-      <input
-        type="tel"
-        id="telNumber"
-        name="telNumber"
-        placeholder="Telephone number"
-      />
       <input
         type="address"
         id="userAddress"
