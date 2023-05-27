@@ -318,6 +318,7 @@ function resumeForm4layout() {
         <input type="button" value="Next" id="Form4btn" />
         </fieldset>
   </form>`;
+  resumeForm4Submitted();
 }
 function resumeForm5layout() {
     let resumeFormContentField = document.querySelector(".resumeForm");

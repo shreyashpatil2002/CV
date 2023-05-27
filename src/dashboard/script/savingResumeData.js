@@ -38,6 +38,8 @@ const resumeForm1Submitted = () => {
       const personalInfostring = JSON.stringify(personalInfo);
       localStorage.setItem("personalInfo", personalInfostring);
       resumeForm2layout();
+      let FormStepsBtn = document.querySelectorAll(".FormSteps li button");
+      FormStepsBtn[0].innerHTML = '<ion-icon name="checkmark"></ion-icon>';
     }
   });
 };
@@ -73,6 +75,8 @@ const resumeForm2Submitted = () => {
       const educationInfostring = JSON.stringify(educationInfo);
       localStorage.setItem("educationInfo", educationInfostring);
       resumeForm3layout();
+      let FormStepsBtn = document.querySelectorAll(".FormSteps li button");
+      FormStepsBtn[1].innerHTML = '<ion-icon name="checkmark"></ion-icon>';
     }
   });
 };
@@ -83,6 +87,8 @@ const resumeForm3Submitted = () => {
   form1SubmitBtn.addEventListener("click", () => {
     AddedExp();
     resumeForm4layout();
+    let FormStepsBtn = document.querySelectorAll(".FormSteps li button");
+      FormStepsBtn[2].innerHTML = '<ion-icon name="checkmark"></ion-icon>';
   });
 };
 
@@ -104,4 +110,24 @@ function AddedExp() {
     const workExpInfostring = JSON.stringify(workExpInfo);
     localStorage.setItem(`workExpInfo${expCount++}`, workExpInfostring);
   }
+}
+
+const resumeForm4Submitted = () => {
+  let form1SubmitBtn = document.getElementById("Form4btn");
+  let dataFields = document.querySelectorAll("input");
+  dataFields = Array.from(dataFields);
+  dataFields.pop();
+  form1SubmitBtn.addEventListener("click", () => {
+    let skillAndLang = new Array();
+    dataFields.forEach(element => {
+      if(element.checked){
+        skillAndLang.push(1);
+      }
+      else {
+        skillAndLang.push(0);
+      }
+    });
+    localStorage.setItem('skillAndLang', skillAndLang)
+    resumeForm5layout();
+  });
 }
