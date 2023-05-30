@@ -38,8 +38,6 @@ const resumeForm1Submitted = () => {
       const personalInfostring = JSON.stringify(personalInfo);
       localStorage.setItem("personalInfo", personalInfostring);
       resumeForm2layout();
-      let FormStepsBtn = document.querySelectorAll(".FormSteps li button");
-      FormStepsBtn[0].innerHTML = '<ion-icon name="checkmark"></ion-icon>';
     }
   });
 };
@@ -75,8 +73,6 @@ const resumeForm2Submitted = () => {
       const educationInfostring = JSON.stringify(educationInfo);
       localStorage.setItem("educationInfo", educationInfostring);
       resumeForm3layout();
-      let FormStepsBtn = document.querySelectorAll(".FormSteps li button");
-      FormStepsBtn[1].innerHTML = '<ion-icon name="checkmark"></ion-icon>';
     }
   });
 };
@@ -87,8 +83,6 @@ const resumeForm3Submitted = () => {
   form1SubmitBtn.addEventListener("click", () => {
     AddedExp();
     resumeForm4layout();
-    let FormStepsBtn = document.querySelectorAll(".FormSteps li button");
-      FormStepsBtn[2].innerHTML = '<ion-icon name="checkmark"></ion-icon>';
   });
 };
 
@@ -119,15 +113,39 @@ const resumeForm4Submitted = () => {
   dataFields.pop();
   form1SubmitBtn.addEventListener("click", () => {
     let skillAndLang = new Array();
-    dataFields.forEach(element => {
-      if(element.checked){
+    dataFields.forEach((element) => {
+      if (element.checked) {
         skillAndLang.push(1);
-      }
-      else {
+      } else {
         skillAndLang.push(0);
       }
     });
-    localStorage.setItem('skillAndLang', skillAndLang)
+    localStorage.setItem("skillAndLang", skillAndLang);
     resumeForm5layout();
   });
-}
+};
+
+const resumeForm5Submitted = () => {
+  let form1SubmitBtn = document.getElementById("Form5btn");
+  let userImage = document.getElementById('userImage');
+
+  userImage.onchange = function () {
+    let reader = new FileReader();
+
+    reader.addEventListener("load", () => {
+      if(userImage.files[0].size < 2000000) {
+        let showImg = document.getElementById('imagePriview');
+        localStorage.setItem('UserImage', reader.result);
+        showImg.style = `background-image: url(${reader.result});
+        background-position:center;
+        background-size:cover;
+        background-repeat:no-repeat;`;
+      }
+      else{
+        alert("image size should be less than 2MB");
+      }
+    })
+    console.log(userImage.files[0].size);
+    reader.readAsDataURL(userImage.files[0]);
+  }
+};
