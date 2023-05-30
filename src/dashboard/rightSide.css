@@ -272,3 +272,20 @@ li {
   transition: 0.375s ease;
   text-align: center;
 }
+#imagePriview {
+  width: 150px;
+  height: 150px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+#userImage {
+  display: none;
+}
+#userImageLabel {
+  background: #010c61;
+  color: #fff;
+  padding: 12px 26px;
+  border-radius: 5px;
+  margin-top: 3rem;
+  cursor: pointer;
+}

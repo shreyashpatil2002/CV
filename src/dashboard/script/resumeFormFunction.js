@@ -330,8 +330,13 @@ function resumeForm5layout() {
     resumeFormContentField.innerHTML = `<form action="#" id="UserPersonalInfo">
     <fieldset>
       <legend>🤳🏻 Upload Image &nbsp;</legend>
-      <input type="file" id="userImage" name="userImage" placeholder="Insert Image">
+      <div id="imagePriview">
+      </div>
+      <br><br>
+      <label id="userImageLabel" for="userImage">Upload Image</label>
+      <input type="file" accept="image/*" id="userImage" name="userImage" placeholder="Insert Image">
       <input type="button" value="Create" id="Form5btn" />
     </fieldset>
   </form>`;
+  resumeForm5Submitted();
 }
