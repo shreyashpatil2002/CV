@@ -78,22 +78,51 @@ const resumeForm2Submitted = () => {
 };
 
 const resumeForm3Submitted = () => {
-  AddedExp();
   let form1SubmitBtn = document.getElementById("Form3btn");
   form1SubmitBtn.addEventListener("click", () => {
-    AddedExp();
-    resumeForm4layout();
+    if (expCount == 0) {
+      alert("At least one Experience is nessesary !");
+    } else {
+      let dataFields = document.querySelectorAll("input");
+      dataFields = Array.from(dataFields);
+      dataFields.pop();
+      dataFields.pop();
+      dataFields.push(document.getElementById("aboutExperience"));
+      SaveExp(dataFields);
+      localStorage.setItem('expcount', expCount);
+      resumeForm4layout();
+    }
   });
 };
 
-let expCount = 0;
 function AddedExp() {
   let dataFields = document.querySelectorAll("input");
-  let textarea = document.querySelector("textarea");
   dataFields = Array.from(dataFields);
   dataFields.pop();
   dataFields.pop();
-  dataFields.push(textarea);
+  dataFields.push(document.getElementById("aboutExperience"));
+  let errorCount = 0;
+  dataFields.forEach((element) => {
+    if (element.value == "") {
+      element.style.border = "1px solid red";
+      errorCount++;
+      return false;
+    } else {
+      element.style.border = "1px solid #767676";
+    }
+  });
+  if (errorCount == 0) {
+    SaveExp(dataFields);
+    let Explist = document.querySelector("#JobExp ul");
+    Explist.innerHTML += `<li>${dataFields[0].value}</li>`;
+    dataFields.forEach(element => {
+      element.value = '';
+    });
+  }
+}
+
+let expCount = 0;
+function SaveExp(dataFields) {
   if (dataFields[0].value != "") {
     const workExpInfo = {
       companyName: dataFields[0].value,
@@ -120,6 +149,7 @@ const resumeForm4Submitted = () => {
         skillAndLang.push(0);
       }
     });
+    skillAndLang = JSON.stringify(skillAndLang);
     localStorage.setItem("skillAndLang", skillAndLang);
     resumeForm5layout();
   });
@@ -127,25 +157,28 @@ const resumeForm4Submitted = () => {
 
 const resumeForm5Submitted = () => {
   let form1SubmitBtn = document.getElementById("Form5btn");
-  let userImage = document.getElementById('userImage');
+  let userImage = document.getElementById("userImage");
 
   userImage.onchange = function () {
     let reader = new FileReader();
 
     reader.addEventListener("load", () => {
-      if(userImage.files[0].size < 2000000) {
-        let showImg = document.getElementById('imagePriview');
-        localStorage.setItem('UserImage', reader.result);
+      if (userImage.files[0].size < 5242880) {
+        let showImg = document.getElementById("imagePriview");
+        localStorage.setItem("UserImage", reader.result);
         showImg.style = `background-image: url(${reader.result});
         background-position:center;
         background-size:cover;
         background-repeat:no-repeat;`;
+      } else {
+        alert("image size should be less than 5MB");
       }
-      else{
-        alert("image size should be less than 2MB");
-      }
-    })
+    });
     console.log(userImage.files[0].size);
     reader.readAsDataURL(userImage.files[0]);
-  }
+  };
 };
+
+function makeMagic() {
+  window.location.href = 'https://google.com'
+}

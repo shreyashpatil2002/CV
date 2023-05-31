@@ -123,8 +123,8 @@ function resumeForm3layout() {
     resumeFormContentField.innerHTML = `<form action="#" id="UserPersonalInfo">
     <fieldset>
       <legend>🤵🏻 Job and Work Experience &nbsp;</legend>
-      <div>
-        <ul style="list-style: circle;color: red;" id="errorContent">
+      <div id="JobExp">
+        <ul>
           
         </ul>
       </div>
@@ -168,7 +168,7 @@ function resumeForm4layout() {
       <div class="checkbox-group">
         <div class="checkbox">
           <label class="checkbox-wrapper">
-            <input type="checkbox" class="checkbox-input" />
+            <input type="checkbox" class="checkbox-input" checked/>
             <span class="checkbox-tile">
               <span class="checkbox-icon"> </span>
               <span class="checkbox-label">HTML</span>
@@ -335,7 +335,7 @@ function resumeForm5layout() {
       <br><br>
       <label id="userImageLabel" for="userImage">Upload Image</label>
       <input type="file" accept="image/*" id="userImage" name="userImage" placeholder="Insert Image">
-      <input type="button" value="Create" id="Form5btn" />
+      <input type="button" value="Create" id="Form5btn" onclick="makeMagic()"/>
     </fieldset>
   </form>`;
   resumeForm5Submitted();

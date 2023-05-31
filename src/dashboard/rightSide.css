@@ -289,3 +289,15 @@ li {
   margin-top: 3rem;
   cursor: pointer;
 }
+#JobExp ul {
+  display: flex;
+}
+#JobExp ul li {
+  font-size: 13px;
+  background: #e4e4e4;
+  padding: 7px 15px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin-left: 5px;
+}
