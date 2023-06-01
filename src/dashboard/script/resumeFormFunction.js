@@ -56,7 +56,7 @@ function resumeForm1layout() {
         autocomplete="off"
         />
       <textarea name="aboutUser" id="aboutUser" cols="40" placeholder="About Yourself" rows="6" ></textarea>
-      <input type="button" value="Next" id="Form1btn" />
+      <input type="button" value="Save & Next" id="Form1btn" />
     </fieldset>
   </form>`;
 
@@ -108,7 +108,7 @@ function resumeForm2layout() {
         placeholder="End Month"
         autocomplete="off"
         />
-        <input type="button" value="Next" id="Form2btn" />
+        <input type="button" value="Save & Next" id="Form2btn" />
     </fieldset>
   </form>`;
     resumeForm2Submitted();
@@ -144,7 +144,7 @@ function resumeForm3layout() {
       />
       <textarea name="aboutExperience" id="aboutExperience" cols="40" placeholder="About Your Experience" rows="6" ></textarea>
       <input type="button" value="ADD" id="addExp" onclick="AddedExp()"/>
-      <input type="button" value="Next" id="Form3btn" />
+      <input type="button" value="Save & Next" id="Form3btn" />
     </fieldset>
   </form>`;
   resumeForm3Submitted();
@@ -315,7 +315,7 @@ function resumeForm4layout() {
           </label>
         </div>
       </div>
-        <input type="button" value="Next" id="Form4btn" />
+        <input type="button" value="Save & Next" id="Form4btn" />
         </fieldset>
   </form>`;
   resumeForm4Submitted();

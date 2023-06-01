@@ -74,7 +74,7 @@ left_sidebar_btns[0].addEventListener('click', () => {
         autocomplete="off"
         />
       <textarea name="aboutUser" id="aboutUser" cols="40" placeholder="About Yourself" rows="6" ></textarea>
-      <input type="button" value="Next" id="Form1btn" />
+      <input type="button" value="Save & Next" id="Form1btn" />
     </fieldset>
   </form>
     </div>
