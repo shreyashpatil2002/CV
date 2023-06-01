@@ -108,11 +108,11 @@ left_sidebar_btns[4].addEventListener('click', () => {
         <img src="../../Assets/svg/undraw_feedback_re_urmj.svg" alt="">
     </div>
     <div class="form">
-        <form action="#">
-            <input type="text" name="subject" id="subject" placeholder="Enter the Subject">
-            <input type="text" name="userName" id="userName" placeholder="Enter Full Name">
-            <input type="email" name="email" id="email" placeholder="Enter Email Id">
-            <textarea name="query" id="query" cols="30" rows="5" placeholder="Tell us, how we can help you ?"></textarea>
+        <form action="../../Backend/contact.php" method="post">
+            <input type="text" name="subject" id="subject" placeholder="Enter the Subject" required>
+            <input type="text" name="name" id="name" placeholder="Enter Full Name" required>
+            <input type="email" name="email" id="email" placeholder="Enter Email Id" required>
+            <textarea name="description" id="description" cols="30" rows="5" placeholder="Tell us, how we can help you ?" required></textarea>
             <input type="submit" id="contact_btn" value="Send">
         </form>
     </div>

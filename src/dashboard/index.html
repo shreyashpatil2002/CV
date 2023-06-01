@@ -1,119 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="../../Assets/logo/favicon.jpg"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="rightSide.css" />
-    <title></title>
-  </head>
-  <body>
-    <div class="header">
-      <nav>
-        <div id="logo"><img src="../../Assets/logo/CV.png" alt="" /></div>
-        <div class="accountInfo">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../../Assets/logo/favicon.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="rightSide.css" />
+  <title></title>
+</head>
+
+<body>
+  <div class="header">
+    <nav>
+      <div id="logo"><img src="../../Assets/logo/CV.png" alt="" /></div>
+      <div class="accountInfo">
+        <div id="massages">
+          <p id="massageNum" class="inactiveMsg"></p>
           <button aria-label="Massages">
             <ion-icon name="mail-unread-outline" id="massage-icon"></ion-icon>
           </button>
-          <div class="UserAccount">
-            <img src="../../Assets/images/avatar (1).png" alt="" />
-            <p id="UserName"></p>
-          </div>
-          <div class="UserAccounthidden" id="UserAccountBox">
-            <p id="UserWelcome" style="font-size: 18px"></p>
-            <hr />
-            <div class="links">
-              <ul>
-                <a href="#"
-                  ><li>
-                    <img src="../../Assets/svg/user-solid.svg" alt="" /> Account
-                  </li></a
-                >
-                <a href="#"
-                  ><li>
-                    <img
-                      src="../../Assets/svg/pen-to-square-solid (1).svg"
-                      alt=""
-                    />
-                    Edit Account
-                  </li></a
-                >
-                <a href="#"
-                  ><li>
-                    <img
-                      src="../../Assets/svg/right-from-bracket-solid.svg"
-                      alt=""
-                    />
-                    Logout
-                  </li></a
-                >
-              </ul>
-            </div>
-          </div>
+            <p id="massageInfo" class="inactiveMsg">We recived your massage and our team will contact you in 5 to 6 working days.</p>
         </div>
-      </nav>
-    </div>
-    <div class="container">
-      <div class="left_sidebar">
-        <div class="ContentList">
-          <ul>
-            <li>Create <ion-icon name="add-outline"></ion-icon></li>
-            <li>Templates <ion-icon name="newspaper-outline"></ion-icon></li>
-            <li>Resumes <ion-icon name="document-outline"></ion-icon></li>
-            <li>Activity <ion-icon name="bar-chart-outline"></ion-icon></li>
-            <li>Contact Us <ion-icon name="call-outline"></ion-icon></li>
-          </ul>
+        <div class="UserAccount">
+          <img src="../../Assets/images/avatar (1).png" alt="" />
+          <p id="UserName"></p>
         </div>
-        <div class="Extra">
-          <h3>Explore <ion-icon name="star"></ion-icon></h3>
-          <p>
-            Here are something that give boost to your carrer in
-            <b> IT Field. </b>Top companies offer students some benificial
-            things.
-          </p>
-          <a href="#"><button>Learn More</button></a>
-        </div>
-        <div class="mediaLinks">
-          <h3>Follow us :</h3>
-          <div class="mediaImg">
-            <a href="#"
-              ><img src="../../Assets/svg/linkedin (1).svg" alt=""
-            /></a>
-            <a href="https://github.com/shreyashpatil2002/CV"
-              ><img src="../../Assets/svg/github.svg" alt=""
-            /></a>
-            <a href="#"><img src="../../Assets/svg/mail.svg" alt="" /></a>
-          </div>
-          <div id="copyright" style="margin-top: 20px">
-            <p>&copy; myResumeBuilder</p>
+        <div class="UserAccounthidden" id="UserAccountBox">
+          <p id="UserWelcome" style="font-size: 18px"></p>
+          <hr />
+          <div class="links">
+            <ul>
+              <a href="#">
+                <li>
+                  <img src="../../Assets/svg/user-solid.svg" alt="" /> Account
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                  <img src="../../Assets/svg/pen-to-square-solid (1).svg" alt="" />
+                  Edit Account
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                  <img src="../../Assets/svg/right-from-bracket-solid.svg" alt="" />
+                  Logout
+                </li>
+              </a>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="right_sidebar">
-        <div class="welcomeImage">
-          <p><img src="../../Assets/svg/undraw_welcoming_re_x0qo-1.svg" alt=""></p>
-          <h1>Welcome To Dashboard !</h1>
+    </nav>
+  </div>
+  <div class="container">
+    <div class="left_sidebar">
+      <div class="ContentList">
+        <ul>
+          <li>Create <ion-icon name="add-outline"></ion-icon></li>
+          <li>Templates <ion-icon name="newspaper-outline"></ion-icon></li>
+          <li>Resumes <ion-icon name="document-outline"></ion-icon></li>
+          <li>Activity <ion-icon name="bar-chart-outline"></ion-icon></li>
+          <li>Contact Us <ion-icon name="call-outline"></ion-icon></li>
+        </ul>
+      </div>
+      <div class="Extra">
+        <h3>Explore <ion-icon name="star"></ion-icon></h3>
+        <p>
+          Here are something that give boost to your carrer in
+          <b> IT Field. </b>Top companies offer students some benificial
+          things.
+        </p>
+        <a href="#"><button>Learn More</button></a>
+      </div>
+      <div class="mediaLinks">
+        <h3>Follow us :</h3>
+        <div class="mediaImg">
+          <a href="#"><img src="../../Assets/svg/linkedin (1).svg" alt="" /></a>
+          <a href="https://github.com/shreyashpatil2002/CV"><img src="../../Assets/svg/github.svg" alt="" /></a>
+          <a href="#"><img src="../../Assets/svg/mail.svg" alt="" /></a>
+        </div>
+        <div id="copyright" style="margin-top: 20px">
+          <p>&copy; myResumeBuilder</p>
         </div>
       </div>
     </div>
-    <script src="./script/userAccounttoggle.js"></script>
-    <script src="./script/changeContent.js"></script>
-    <script src="./script/savingResumeData.js"></script>
-    <script src="./script/changeFormContent.js"></script>
-    <script src="./script/resumeFormFunction.js"></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+    <div class="right_sidebar">
+      <div class="welcomeImage">
+        <p><img src="../../Assets/svg/undraw_welcoming_re_x0qo-1.svg" alt=""></p>
+        <h1>Welcome To Dashboard !</h1>
+      </div>
+    </div>
+  </div>
+  <script src="./script/userAccounttoggle.js"></script>
+  <script src="./script/changeContent.js"></script>
+  <script src="./script/savingResumeData.js"></script>
+  <script src="./script/changeFormContent.js"></script>
+  <script src="./script/resumeFormFunction.js"></script>
+  <script src="./script/massage.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
