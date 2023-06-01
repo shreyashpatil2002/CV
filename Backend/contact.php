@@ -22,8 +22,18 @@ if ($conn->connect_error) {
 $stmt = $conn->prepare("INSERT INTO `usercontact`(`subject`, `name`, `email`, `description`) VALUES ('$subject','$name','$email','$description')");
 
 if ($stmt->execute()) {
-    echo "<script>alert('We will contact you 🧙‍♀️');</script>";
-    header("location:../src/other/contactUs/index.html");
+    echo "<script> 
+    if(localStorage.getItem('SignUpData') == null){
+        window.location.href = '../src/accounts/signin/index.html';
+    }
+    else {
+        localStorage.setItem('contact', 'true');
+        localStorage.setItem('seen', 'false');
+        let date = new Date();
+        localStorage.setItem('today', date);
+        window.location.href = '../src/dashboard/index.html';
+    }
+    </script>";
 } else {
     echo "Error: " . $stmt->error;
 }
