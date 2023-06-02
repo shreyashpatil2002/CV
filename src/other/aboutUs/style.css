@@ -114,6 +114,45 @@ body {
   margin: 1rem auto;
   width: 30rem;
 }
+/*Here is Our team section */
+
+.teamSection{
+  width: 100%;
+  height: auto;
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.teamSection .card{
+  padding: 2%;
+  height: auto;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+.teamsection .card a{
+text-decoration: none;
+  font-size: 10px;
+  color: black;
+
+}
+
+.teamSection .card .button{
+border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  
+}
 
 /* footer styleing  */
 .footer {
