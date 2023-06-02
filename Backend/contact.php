@@ -24,7 +24,7 @@ $stmt = $conn->prepare("INSERT INTO `usercontact`(`subject`, `name`, `email`, `d
 if ($stmt->execute()) {
     echo "<script> 
     if(localStorage.getItem('SignUpData') == null){
-        window.location.href = '../src/accounts/signin/index.html';
+        window.location.href = '../src/accounts/signup/index.html';
     }
     else {
         localStorage.setItem('contact', 'true');
