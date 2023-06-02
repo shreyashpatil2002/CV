@@ -75,6 +75,7 @@ cpassword.addEventListener("keyup", (e) => {
   } else {
     cpassword.classList.add("rightField");
     cpassword.classList.remove("wrongField");
+  signUpDataFields[3].style = `border: none;`;
   }
 });
 
@@ -89,3 +90,32 @@ form.addEventListener("submit", () => {
   signUpDataString = JSON.stringify(signUpData);
   localStorage.setItem('SignUpData', signUpDataString);
 });
+
+if(localStorage.getItem('wrongMail') == 'true') {
+  let err = document.getElementById('emailError');
+  err.classList.remove('mailInactive');
+  let userData = localStorage.getItem('SignUpData');
+  if(userData != null) {
+    userData = JSON.parse(userData);
+    signUpDataFields[0].value = userData.userName;
+    signUpDataFields[1].value = userData.userEmail;
+    signUpDataFields[2].value =  userData.userPassword;
+    signUpDataFields[3].value = userData.userPassword;
+  }
+  signUpDataFields[1].style = `border: solid red;`;
+  localStorage.setItem('wrongMail', 'false');
+}
+
+if(localStorage.getItem('passMatch') == 'false') {
+  let err = document.getElementById('passError');
+  err.classList.remove('passInactive');
+  let userData = localStorage.getItem('SignUpData');
+  if(userData != null) {
+    userData = JSON.parse(userData);
+    signUpDataFields[0].value = userData.userName;
+    signUpDataFields[1].value = userData.userEmail;
+    signUpDataFields[2].value =  userData.userPassword;
+  }
+  signUpDataFields[3].style = `border: solid red;`;
+  localStorage.setItem('passMatch', 'true');
+}
