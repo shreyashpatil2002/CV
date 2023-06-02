@@ -5,13 +5,9 @@ let msgContent = document.getElementById("massageInfo");
 let AccountBox = document.getElementById("UserAccountBox");
 let today = new Date(localStorage.getItem("today"));
 msgContent.innerHTML += `<span style="float:right;margin-top: 15px;">${today.toDateString()}`;
+
 if (contact == "true" && seen == "false") {
   msgNotification.classList.remove("inactiveMsg");
-  document.getElementById("massages").addEventListener("click", () => {
-    msgNotification.classList.add("inactiveMsg");
-    msgContent.classList.toggle("inactiveMsg");
-    localStorage.setItem("seen", "true");
-  });
 
   let container = document
     .querySelector(".container")
@@ -21,3 +17,11 @@ if (contact == "true" && seen == "false") {
       AccountBox.classList.remove("UserAccountActive");
     });
 }
+
+document.getElementById("massages").addEventListener("click", () => {
+  if (localStorage.getItem("contact") == "true") {
+    msgNotification.classList.add("inactiveMsg");
+    msgContent.classList.toggle("inactiveMsg");
+    localStorage.setItem("seen", "true");
+  }
+});
