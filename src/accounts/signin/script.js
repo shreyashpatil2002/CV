@@ -49,10 +49,10 @@ if(localStorage.getItem('passMatch') == 'false') {
   let userData = localStorage.getItem('signInData');
   if(userData != null) {
     userData = JSON.parse(userData);
-    signInData[0].value = userData.accountMail;
-    signInData[1].value = userData.accountPass;
+    mail.value = userData.accountMail;
+    password.value = userData.accountPass;
   }
-  signInData[1].style = `border: solid red;`;
+  password.style = `border: solid red;`;
   localStorage.setItem('passMatch', 'true');
 }
 
@@ -62,8 +62,8 @@ if(localStorage.getItem('accountExist') == 'false') {
   let userData = localStorage.getItem('signInData');
   if(userData != null) {
     userData = JSON.parse(userData);
-    signInData[0].value = userData.accountMail;
-    signInData[1].value = userData.accountPass;
+    mail.value = userData.accountMail;
+    password.value = userData.accountPass;
   }
   localStorage.setItem('accountExist', 'true');
 }
