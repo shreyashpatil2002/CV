@@ -32,3 +32,38 @@ password.addEventListener('focusout', () => {
         eyes.style.display = "none";
       }
 })
+
+let form = document.querySelector("form");
+form.addEventListener("submit", () => {
+  let signInData = {
+    "accountMail": mail.value,
+    "accountPass": password.value,
+  }
+  signInDataString = JSON.stringify(signInData);
+  localStorage.setItem('signInData', signInDataString);
+});
+
+if(localStorage.getItem('passMatch') == 'false') {
+  let err = document.getElementById('passError');
+  err.classList.remove('passInactive');
+  let userData = localStorage.getItem('signInData');
+  if(userData != null) {
+    userData = JSON.parse(userData);
+    signInData[0].value = userData.accountMail;
+    signInData[1].value = userData.accountPass;
+  }
+  signInData[1].style = `border: solid red;`;
+  localStorage.setItem('passMatch', 'true');
+}
+
+if(localStorage.getItem('accountExist') == 'false') {
+  let err = document.getElementById('accountError');
+  err.classList.remove('accountInactive');
+  let userData = localStorage.getItem('signInData');
+  if(userData != null) {
+    userData = JSON.parse(userData);
+    signInData[0].value = userData.accountMail;
+    signInData[1].value = userData.accountPass;
+  }
+  localStorage.setItem('accountExist', 'true');
+}
