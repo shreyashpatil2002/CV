@@ -28,11 +28,13 @@
     </div>
     <div class="main">
         <div class="form">
-            <form action="#">
-                <input type="email" name="email" id="email" placeholder="Enter Email Id" autocomplete="off">
+            <p id="accountError" class="accountInactive">Account does not exist 🙁</p>
+            <p id="passError" class="passInactive">Mail or password not correct 😞</p>
+            <form action="../../../Backend/login.php" method="post">
+                <input type="email" name="email" id="email" placeholder="Enter Email Id" autocomplete="off" required>
                 <div>
                     <input type="password" name="password" id="password" placeholder="Enter Password"
-                        autocomplete="off">
+                        autocomplete="off" required>
                     <img src="../../../Assets/svg/eye-solid.svg" alt="">
                     <a href="#">Forgot password ?</a>
                 </div>

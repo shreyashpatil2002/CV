@@ -88,6 +88,7 @@ body {
   padding: 2rem 5rem;
   box-shadow: 0px 4px 5px #e2e2e2;
   border-radius: 8px;
+  position: relative;
 }
 .main .form form input, #form_btn{
   width: 100%;
@@ -136,4 +137,11 @@ body {
   color: #00108a;
   text-decoration: underline;
 }
-
+#accountError, p#passError {
+  position: absolute;
+  top: 0;
+  color: red;
+}
+.accountInactive, .passInactive {
+  display: none;
+}
