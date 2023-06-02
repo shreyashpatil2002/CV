@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../../Assets/logo/favicon.jpg" type="image/x-icon" />
+    <title></title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul,
+        ol,
+        li {
+            list-style: none;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+        }
+        .container {
+            padding: 3rem;
+        }
+        .container h1 {
+            color: #343434;
+            margin-bottom: 1rem;
+        }
+        .container h4 {
+            color: #343434;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .container .content {
+            line-height: 1.8rem;
+            color: #000;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <script>
+        let userdata = localStorage.getItem('SignUpData');
+        userdata = JSON.parse(userdata);
+        document.title = `Account : ${userdata.userName}@CV`
+        document.body.innerHTML = `
+        <div class="container">
+        <h1>Welcome, ${userdata.userName}</h1>
+        <h4>Details</h4>
+        <div class="content">
+            <p>Name : ${userdata.userName}</p>
+            <p>Email : ${userdata.userEmail}</p>
+            <p>password : ${userdata.userPassword}</p>
+        </div>
+    </div>
+        `;
+    </script>
+</body>
+
+</html>
