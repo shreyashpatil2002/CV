@@ -26,8 +26,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $row = $result->fetch_assoc();
         // Check if password matches
         if ($row['userpass'] == $userPass) {
-            // Email and password matched
-            header("Location:../src/dashboard/index.html");
+            $dataName =  $row['name'];
+            $dataMail = $row['email'];
+            $dataPass = $row['userpass'];
+            echo "<script>
+            let signUpData = {
+                'userName': '$dataName',
+                'userEmail': '$dataMail',
+                'userPassword': '$dataPass',
+              }
+              signUpDataString = JSON.stringify(signUpData);
+              localStorage.setItem('SignUpData', signUpDataString);
+              window.location.href = '../src/dashboard/index.html';
+              </script>";
+            // header("Location:../src/dashboard/index.html");
         } else {
             // Password does not match
             echo "<script>
