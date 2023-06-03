@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -353,4 +354,360 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../Assets/logo/favicon.jpg" type="image/x-icon">
+    <title>create@CV</title>
+    <style>
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul,
+        ol,
+        li {
+            list-style: none;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        body .resume {
+            margin-top: 3rem;
+            width: 1000px;
+            height: 1414px;
+            background: #eee;
+        }
+        .topArea {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            border-bottom: 2px solid rgb(1, 151, 211);
+        }
+
+        .box1,
+        .box2,
+        .box3 {
+            padding: 3rem;
+        }
+
+        .box1 {
+            flex-basis: 40%;
+        }
+
+        .box1 h1 {
+            font-size: 2.4rem;
+            font-weight: 400;
+            margin-bottom: .2rem;
+            position: relative;
+        }
+
+        .box1 h1::before {
+            content: '';
+            width: 30px;
+            height: 50px;
+            background: #000;
+            position: absolute;
+            left: -50px;
+            top: 13px;
+        }
+
+        .box1 h3 {
+            color: rgb(1, 151, 211);
+            margin-bottom: .2rem;
+        }
+
+        .box1 p {
+            width: 100%;
+        }
+
+        .box2 {
+            flex-basis: 20%;
+        }
+
+        .box3 {
+            flex-basis: 40%;
+        }
+
+        .box2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box3 {
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .box3 ul li {
+            margin: 0.7rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        #imagePriview {
+            width: 150px;
+            height: 150px;
+            background-color: #eee;
+            border-radius: 50%;
+            border: 5px solid rgb(1, 151, 211);
+        }
+
+        .bottomArea {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-items: center;
+        }
+
+        .leftSide,
+        .rightSide {
+            flex-basis: 50%;
+            padding: 3rem;
+        }
+
+        .leftSide h1 {
+            margin-bottom: .7rem;
+        }
+
+        .leftSide h3 {
+            font-size: 1.7rem;
+            position: relative;
+        }
+
+        .leftSide h4 {
+            font-size: 1.2rem;
+            margin: .3rem 0;
+            font-weight: 500;
+        }
+
+        .leftSide .experience p,
+        .Education p {
+            margin: .3rem 0 2rem 0;
+            width: 85%;
+        }
+
+        .leftSide h3::before {
+            content: '';
+            width: 30px;
+            height: 50px;
+            background: rgb(1, 151, 211);
+            position: absolute;
+            left: -50px;
+            top: 10px;
+        }
+
+        .leftSide .language h4 {
+            font-size: 1.7rem;
+            font-weight: bold;
+        }
+
+        .language .lang {
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: .2rem 0;
+        }
+
+        .language .lang .checkboxList {
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .language .lang .checkboxList input[type="checkbox"] {
+            border: none;
+            background: rgb(1, 151, 211);
+        }
+
+        .skills .skill {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            margin: .9rem 0;
+        }
+
+        .skills h1 {
+            margin-bottom: 1rem;
+        }
+
+        .skill p {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .skill input[type="range"] {
+            width: 23rem;
+        }
+
+        .organization h1, .language h1 {
+            margin-top: 2rem;
+        }
+
+        .organization h4 {
+            font-size: 20px;
+            margin: .5rem 0;
+            font-weight: 500;
+        }
+        .language p {
+            margin: .7rem 0;
+        }
+        ion-icon.md.hydrated {
+            margin-left: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resume">
+        <div class="topArea">
+            <div class="box1"></div>
+            <div class="box2">
+                <div id="imagePriview"></div>
+            </div>
+            <div class="box3"></div>
+        </div>
+        <div class="bottomArea">
+            <div class="leftSide">
+                <div class="experience"></div>
+                <div class="Education"></div>
+            </div>
+            <div class="rightSide">
+                <div class="skills"></div>
+                <div class="language"></div>
+                <div class="organization"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let personalInfo = JSON.parse(localStorage.getItem('personalInfo'));
+        let box1 = document.querySelector('.box1');
+        box1.innerHTML = `<h1>${personalInfo.firstName} ${personalInfo.lastName}</h1>
+            <h3>${personalInfo.jobRole}</h3>
+            <p>${personalInfo.aboutUser}</p>`;
+
+        let box2 = document.querySelector('#imagePriview');
+        let userImage = localStorage.getItem('UserImage');
+        box2.style = `background-image: url(${userImage});
+        background-position:center;
+        background-size:cover;
+        background-repeat:no-repeat;`;
+
+        let box3 = document.querySelector('.box3');
+        box3.innerHTML = `
+        <ul>
+                <li>${personalInfo.jobEmail} <ion-icon name="mail"></ion-icon></li>
+                <li>${personalInfo.phone} <ion-icon name="phone-portrait-outline"></ion-icon></li>
+                <li>${personalInfo.userAddress} <ion-icon name="location"></ion-icon></li>
+            </ul>`;
+
+
+        let experience = document.querySelector('.experience');
+        experience.innerHTML = `<h1>WORK EXPERIENCE</h1>`;
+        let expcount = localStorage.getItem('expcount');
+        for (let i = 0; i < expcount; i++) {
+            let exp = JSON.parse(localStorage.getItem(`workExpInfo${i}`));
+            experience.innerHTML += `
+                <h3>${exp.companyJobRole}</h3>
+                <h4>${exp.companyName}</h4>
+                <p>${exp.companyExp}</p>
+            `;
+        }
+
+        let education = document.querySelector('.Education');
+        education.innerHTML = '<h1>EDUCATION</h1>';
+        let educationInfo = JSON.parse(localStorage.getItem('educationInfo'));
+        let startEdu = new Date(educationInfo.startYear);
+        let endEdu = new Date(educationInfo.endYear);
+        education.innerHTML += `
+                <h3>${educationInfo.degreeName}</h3>
+                <h4>${educationInfo.collageName}</h4>
+                <p>${startEdu.toLocaleString('default', { month: 'long' })} ${startEdu.getFullYear()} - ${endEdu.toLocaleString('default', { month: 'long' })} ${endEdu.getFullYear()}</p>
+            `;
+
+        let skillLangArr = ['HTML', 'CSS', 'JavaScript', 'SQL', 'PHP', 'C', 'C++', 'Java', 'Python', 'React', 'Angular', 'English', 'Spanish', 'Hindi', 'Arabic', 'Russian'];
+        let language = document.querySelector('.language');
+        language.innerHTML = '<h1>LANGUAGES</h1>';
+        let skillLangInfo = JSON.parse(localStorage.getItem('skillAndLang'));
+        let index = 0;
+        skillLangInfo.forEach(element => {
+            if (element == 1 && index > 10) {
+                language.innerHTML += `<div class="lang">
+                    <p>${skillLangArr[index]}</p>
+                        <div class="checkboxList">
+                            <input type="checkbox">
+                            <input type="checkbox">
+                            <input type="checkbox">
+                            <input type="checkbox">
+                            <input type="checkbox">
+                        </div>
+                    </div>`;
+            }
+            index++;
+        });
+
+        let idx = 0;
+        let skills = document.querySelector('.skills');
+        skills.innerHTML = '<h1>SKILLS</h1>';
+        skillLangInfo.forEach(element => {
+            if (element == 1 && idx <= 10) {
+                skills.innerHTML += `<div class="skill">
+                    <p>${skillLangArr[idx]}</p>
+                        <div class="checkboxList">
+                            <input type="range">
+                        </div>
+                    </div>`;
+            }
+            idx++;
+        });
+
+        let organization = document.querySelector('.organization');
+        organization.innerHTML = '<h1>ORGANIZATION</h1>';
+        for (let i = 0; i < expcount; i++) {
+            let exp = JSON.parse(localStorage.getItem(`workExpInfo${i}`));
+            organization.innerHTML += `
+                <h4>${exp.companyName}</h4>
+            `;
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+>>>>>>> 8ea8f88 (Added Lay out 1,2 and and deleted unwanted files from directory.)
 </html>
