@@ -1,21 +1,21 @@
-let right_sidebar = document.querySelector('.container .right_sidebar');
-let left_sidebar_btns = document.querySelectorAll('.ContentList li');
+let right_sidebar = document.querySelector(".container .right_sidebar");
+let left_sidebar_btns = document.querySelectorAll(".ContentList li");
 
 function clearRightSidebarBtnstyle(arr) {
-  arr.forEach(element => {
-      element.style = `background: transparent;
+  arr.forEach((element) => {
+    element.style = `background: transparent;
       color: #000;
-      box-shadow: none;`
+      box-shadow: none;`;
   });
-};
+}
 
-left_sidebar_btns[0].addEventListener('click', () => {
+left_sidebar_btns[0].addEventListener("click", () => {
   clearRightSidebarBtnstyle(left_sidebar_btns);
-    left_sidebar_btns[0].style = `box-shadow: 0px 0px 7px #010c61ae;
+  left_sidebar_btns[0].style = `box-shadow: 0px 0px 7px #010c61ae;
     background: #010c61;
     color: #fff;`;
 
-    right_sidebar.innerHTML = ` <div class="ResumeContainer">
+  right_sidebar.innerHTML = ` <div class="ResumeContainer">
     <div class="FormSteps">
       <li><button>1</button></li>
       <li><button>2</button></li>
@@ -80,30 +80,29 @@ left_sidebar_btns[0].addEventListener('click', () => {
     </div>
   </div>`;
 });
-left_sidebar_btns[1].addEventListener('click', () => {
-  clearRightSidebarBtnstyle(left_sidebar_btns);
-    left_sidebar_btns[1].style = `box-shadow: 0px 0px 7px #010c61ae;
-    background: #010c61;
-    color: #fff;`;
+left_sidebar_btns[1].addEventListener("click", () => {
+  showTemplates();
 });
-left_sidebar_btns[2].addEventListener('click', () => {
+left_sidebar_btns[2].addEventListener("click", () => {
   clearRightSidebarBtnstyle(left_sidebar_btns);
-    left_sidebar_btns[2].style = `box-shadow: 0px 0px 7px #010c61ae;
+  left_sidebar_btns[2].style = `box-shadow: 0px 0px 7px #010c61ae;
     background: #010c61;
     color: #fff;`;
+    right_sidebar.innerHTML = `further enhancements`;
 });
-left_sidebar_btns[3].addEventListener('click', () => {
+left_sidebar_btns[3].addEventListener("click", () => {
   clearRightSidebarBtnstyle(left_sidebar_btns);
-    left_sidebar_btns[3].style = `box-shadow: 0px 0px 7px #010c61ae;
+  left_sidebar_btns[3].style = `box-shadow: 0px 0px 7px #010c61ae;
     background: #010c61;
     color: #fff;`;
+    right_sidebar.innerHTML = `your activity is not available.`;
 });
-left_sidebar_btns[4].addEventListener('click', () => {
+left_sidebar_btns[4].addEventListener("click", () => {
   clearRightSidebarBtnstyle(left_sidebar_btns);
-    left_sidebar_btns[4].style = `box-shadow: 0px 0px 7px #010c61ae;
+  left_sidebar_btns[4].style = `box-shadow: 0px 0px 7px #010c61ae;
     background: #010c61;
     color: #fff;`;
-    right_sidebar.innerHTML = `<div class="ContactContainer">
+  right_sidebar.innerHTML = `<div class="ContactContainer">
     <div class="image">
         <img src="../../Assets/svg/undraw_feedback_re_urmj.svg" alt="">
     </div>
@@ -119,3 +118,25 @@ left_sidebar_btns[4].addEventListener('click', () => {
 </div>`;
 });
 
+function showTemplates() {
+  clearRightSidebarBtnstyle(left_sidebar_btns);
+  left_sidebar_btns[1].style = `box-shadow: 0px 0px 7px #010c61ae;
+    background: #010c61;
+    color: #fff;`;
+  right_sidebar.innerHTML = `<div class="sectionOne">
+  <div class="imageContent">
+    <h1>Choose a <span>Template</span></h1>
+    <div class="cardList">
+      <div class="cardContent">
+        <div class="card"><a href="#"><img src="../../Assets/images/resume/layout1.jpg" alt=""></a></div>
+      </div>
+      <div class="cardContent">
+        <div class="card"><a href="#"><img src="../../Assets/images/resume/layout2.jpg" alt=""></a></div>
+      </div>
+      <div class="cardContent">
+        <div class="card"><a href="#"><img src="../../Assets/images/resume/layout3.jpg" alt=""></a></div>
+      </div>
+    </div>
+  </div>
+</div>`;
+}

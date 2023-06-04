@@ -335,7 +335,7 @@ function resumeForm5layout() {
       <br><br>
       <label id="userImageLabel" for="userImage">Upload Image</label>
       <input type="file" accept="image/*" id="userImage" name="userImage" placeholder="Insert Image">
-      <input type="button" value="Create" id="Form5btn" onclick="makeMagic()"/>
+      <input type="button" value="Create" id="Form5btn" onclick="checkFormData()"/>
     </fieldset>
   </form>`;
   resumeForm5Submitted();

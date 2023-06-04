@@ -156,7 +156,6 @@ const resumeForm4Submitted = () => {
 };
 
 const resumeForm5Submitted = () => {
-  let form1SubmitBtn = document.getElementById("Form5btn");
   let userImage = document.getElementById("userImage");
 
   userImage.onchange = function () {
@@ -179,6 +178,19 @@ const resumeForm5Submitted = () => {
   };
 };
 
-function makeMagic() {
-  window.location.href = 'https://google.com'
+function checkFormData() {
+  let localStoArr = ['personalInfo', 'educationInfo', 'workExpInfo0', 'skillAndLang', 'UserImage'];
+  let errArray = new Array();
+  localStoArr.forEach(element => {
+      if (localStorage.getItem(element) == undefined) {
+        errArray.push(element);
+      }
+  });
+  if(errArray.length == 0) {
+    showTemplates();
+    makeTempAvailable();
+  }
+  else {
+    alert("Fill All the forms given to you 🤷🏻‍♀️");
+  }
 }
