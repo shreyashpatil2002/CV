@@ -58,7 +58,7 @@ skillLangInfo.forEach((element) => {
 });
 
 let idx = 0;
-let skills = document.querySelector(".skills");
+let skills = document.getElementById("skillList");
 skillLangInfo.forEach((element) => {
   if (element == 1 && idx <= 10) {
     skills.innerHTML += `<div class="box">
